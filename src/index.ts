@@ -1,5 +1,8 @@
-console.log('hi')
+import { Sorter } from "./Sorter";
+import { NumbersCollection } from "./NumbersCollection";
 
-const logStuff = ()=>{
-  console.log('testing');
-}
+const numbersCollection = new NumbersCollection([10,2,3,-5,-10]);
+const sorter = new Sorter(numbersCollection)
+sorter.sort();
+console.log(numbersCollection.data)
+
